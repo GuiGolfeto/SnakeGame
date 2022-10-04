@@ -15,7 +15,7 @@ body {
 }
 
 #game-board {
-    background: rgb(142, 86, 255);
+    background: rgb(96, 21, 244);
     height: 100vmin;
     width: 100vmin;
 
@@ -26,7 +26,7 @@ body {
 
 .snake{
     background: rgb(0, 186, 0);
-    border: 0.25vmin solid black;
+    border: 0.25vmin solid rgb(1, 145, 1);
 }
 
 .food{

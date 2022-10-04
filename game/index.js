@@ -9,7 +9,7 @@ let lastTimeRender = 0;
 function main(currentTime){
 
     if (checkGameOver()){
-        if (confirm(`Você perdeu o jogo com ${snakeBody.length} pontos`)){
+        if (confirm(`Você perdeu o jogo com ${(snakeBody.length - 1)} pontos`)){
             window.location.reload();
         }else { 
             window.requestAnimationFrame(main);
@@ -34,7 +34,7 @@ function main(currentTime){
 
 
 function update(){
-    points.innerHTML = snakeBody.length;
+    points.innerHTML = snakeBody.length - 1;
     gameboard.innerHTML = ''
     snakeUpdate();
     foodUpdate();
